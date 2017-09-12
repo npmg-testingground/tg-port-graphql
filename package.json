@@ -1,0 +1,33 @@
+{
+  "name": "tg-port-graphql",
+  "version": "0.0.1",
+  "main": "server.js",
+  "license": "MIT",
+  "scripts": {
+    "build": "webpack",
+    "start": "webpack && node ./build/server.js",
+    "debug": "webpack && node --inspect=0.0.0.0:9229 ./build/server.js",
+    "docker": "docker-compose -f docker-compose/development.yml up -d",
+    "dev-watch-webpack": "webpack --watch",
+    "dev-watch-backend": "nodemon ./build/server.js"
+  },
+  "dependencies": {
+    "apollo-errors": "^1.5.1",
+    "axios": "^0.16.2",
+    "dataloader": "^1.3.0",
+    "graphql": "^0.11.3",
+    "graphql-server-hapi": "^1.1.2",
+    "graphql-tools": "^1.2.2",
+    "hapi": "^16.5.2",
+    "jsonwebtoken": "^8.0.0",
+    "lodash.merge": "^4.6.0",
+    "webpack": "^3.5.6"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-plugin-transform-decorators-legacy": "^1.3.4",
+    "babel-preset-env": "^1.6.0",
+    "babel-preset-es2017": "^6.24.1"
+  }
+}
