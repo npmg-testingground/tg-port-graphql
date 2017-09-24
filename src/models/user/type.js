@@ -1,8 +1,9 @@
 const User = `
   type User {
-    firstName: String,
-    lastName: String,
-    email: String,
+    id: String
+    firstName: String
+    lastName: String
+    email: String
     type: String
   }
 `;

@@ -1,6 +1,7 @@
 const Class = `
   type Class {
-    graduationYear: Int,
+    id: String
+    graduationYear: Int
     members: [User]
   }
 `;

@@ -1,6 +1,7 @@
 const Room = `
 type Room {
-  number: Int,
+  id: String
+  number: Int
   floor: Int
 }
 `;

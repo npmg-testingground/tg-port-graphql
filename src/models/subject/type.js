@@ -1,5 +1,6 @@
 const Subject = `
   type Subject {
+    id: String
     name: String
   }
 `;
